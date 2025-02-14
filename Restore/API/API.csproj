@@ -6,8 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
+  <!--commented out because it's not needed for the API-->
+  <!-- <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.2" />
-  </ItemGroup>
+  </ItemGroup> -->
 
 </Project>

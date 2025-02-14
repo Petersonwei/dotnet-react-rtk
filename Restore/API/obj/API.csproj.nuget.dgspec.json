@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\Udemy\\dotnet react rtk\\Restore\\API\\API.csproj": {}
+    "C:\\Dev\\Udemy\\dotnet react rtk\\Restore\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\Udemy\\dotnet react rtk\\Restore\\API\\API.csproj": {
+    "C:\\Dev\\Udemy\\dotnet react rtk\\Restore\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\Udemy\\dotnet react rtk\\Restore\\API\\API.csproj",
+        "projectUniqueName": "C:\\Dev\\Udemy\\dotnet react rtk\\Restore\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Dev\\Udemy\\dotnet react rtk\\Restore\\API\\API.csproj",
+        "projectPath": "C:\\Dev\\Udemy\\dotnet react rtk\\Restore\\api\\API.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\Udemy\\dotnet react rtk\\Restore\\API\\obj\\",
+        "outputPath": "C:\\Dev\\Udemy\\dotnet react rtk\\Restore\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,12 +43,6 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[9.0.2, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
