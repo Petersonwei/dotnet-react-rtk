@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\Udemy\\dotnet react rtk\\Restore\\api\\API.csproj": {}
+    "C:\\Dev\\Udemy\\dotnet react rtk\\Restore\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\Udemy\\dotnet react rtk\\Restore\\api\\API.csproj": {
+    "C:\\Dev\\Udemy\\dotnet react rtk\\Restore\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\Udemy\\dotnet react rtk\\Restore\\api\\API.csproj",
+        "projectUniqueName": "C:\\Dev\\Udemy\\dotnet react rtk\\Restore\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Dev\\Udemy\\dotnet react rtk\\Restore\\api\\API.csproj",
+        "projectPath": "C:\\Dev\\Udemy\\dotnet react rtk\\Restore\\API\\API.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\Udemy\\dotnet react rtk\\Restore\\api\\obj\\",
+        "outputPath": "C:\\Dev\\Udemy\\dotnet react rtk\\Restore\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
