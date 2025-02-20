@@ -1,14 +1,11 @@
 using API.Data;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Restore.API.Entities;
 
 namespace API.Controllers
 {
-    [Route("api/[controller]")] // https://localhost:5001/api/products
-    [ApiController]
-    public class ProductsController(StoreContext context) : ControllerBase
+    public class ProductsController(StoreContext context) : BaseApiController
     {
 
         [HttpGet]
