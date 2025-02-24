@@ -30,6 +30,7 @@ export const baseQueryWithErrorHandling = async (args: string | FetchArgs, api: 
             case 400:
                 if (typeof responseData === 'string') toast.error(responseData);
                 else if ('errors' in responseData) {
+                    toast.error('validation error');
                     throw Object.values(responseData.errors).flat().join(', ')
                 }
                 else toast.error(responseData.title);
@@ -40,11 +41,11 @@ export const baseQueryWithErrorHandling = async (args: string | FetchArgs, api: 
                 break;
             case 404:
                 if (typeof responseData === 'object' && 'title' in responseData)
-                    router.navigate('/not-found')
+                    toast.error(responseData.title);
                 break;
             case 500:
-                if (typeof responseData === 'object')
-                    router.navigate('/server-error', {state: {error: responseData}})
+                if (typeof responseData === 'object' && 'title' in responseData)
+                    toast.error(responseData.title);
                 break;
             default:
                 break;
