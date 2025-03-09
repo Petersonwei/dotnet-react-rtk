@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace API.Data.Migrations
+namespace API.Migrations
 {
     [DbContext(typeof(StoreContext))]
     partial class StoreContextModelSnapshot : ModelSnapshot
@@ -37,7 +37,7 @@ namespace API.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("BasketId")
+                    b.Property<int>("BasketId")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("ProductId")
@@ -52,7 +52,7 @@ namespace API.Data.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("BasketItem");
+                    b.ToTable("BasketItems");
                 });
 
             modelBuilder.Entity("API.Entities.Product", b =>
@@ -94,15 +94,19 @@ namespace API.Data.Migrations
 
             modelBuilder.Entity("API.Entities.BasketItem", b =>
                 {
-                    b.HasOne("API.Entities.Basket", null)
+                    b.HasOne("API.Entities.Basket", "Basket")
                         .WithMany("Items")
-                        .HasForeignKey("BasketId");
+                        .HasForeignKey("BasketId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("API.Entities.Product", "Product")
                         .WithMany()
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Basket");
 
                     b.Navigation("Product");
                 });
