@@ -1,4 +1,4 @@
-namespace Restore.API.Entities;
+namespace API.Entities;
 
 public class Product
 {

@@ -1,6 +1,6 @@
 using System;
 using Microsoft.EntityFrameworkCore;
-using Restore.API.Entities;
+using API.Entities;
 
 namespace API.Data;
 

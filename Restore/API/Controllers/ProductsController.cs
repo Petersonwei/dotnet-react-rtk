@@ -1,7 +1,7 @@
 using API.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Restore.API.Entities;
+using API.Entities;
 
 namespace API.Controllers
 {
